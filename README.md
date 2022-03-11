@@ -4,7 +4,7 @@
 ## Members:
 Song Haixing, 2019213295, 190899129, jp2019213295@qmul.ac.uk
 
-Feng Qianhang, 2019213296, 
+Feng Qianhang, 2019213296, 190897734, jp2019213296@qmul.ac.uk
 
 Han Di,
 
