@@ -10,6 +10,6 @@ Han Di,
 
 Xiong Yining, 
 
-Chen Qianxuan
+Chen Qianxuan, 2019213299, 190897446, jp2019213299@qmul.ac.uk
 
 ## Asigned TA: Yongwei Zhang
