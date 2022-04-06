@@ -1,0 +1,33 @@
+.end {
+    margin-top: 50px;
+    height: 450px;
+    background-color: #76d3f2;
+}
+
+.end a img {
+    margin-top: 10px;
+    padding-right: 80px;
+}
+
+.color-endText {
+    color: #f30067;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.end-text p {
+    color: #1c2127;
+    font-size: 16px;
+}
+
+.end-right-box h3 {
+    margin-top: 35px;
+    padding-left: 68px;
+}
+
+.end-right-box ul li {
+    margin-top: 35px;
+    padding-left: 68px;
+    color: #1c2127;
+    font-size: 16px;
+}
