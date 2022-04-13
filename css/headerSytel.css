@@ -1,0 +1,884 @@
+html,
+body {
+    margin: 0;
+    font-size: 100%;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body a {
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family: 'Raleway', sans-serif;
+}
+
+body img {
+    max-width: 100%;
+}
+
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #323648;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #707579;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*-- header --*/
+/* 头部的标题文字样式 */
+a.navbar-brand {
+    font-size: .75em;
+    color: #fff;
+    padding: 0;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    position: relative;
+}
+
+/* 奥运会logo添加伪元素  */
+a.navbar-brand {
+    font-size: .75em;
+    color: #fff;
+    padding: 0;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    position: relative;
+}
+
+a.navbar-brand span.fa {
+    color: #baa3cd;
+}
+
+.header-agile h1 a span::before {
+    content: '';
+    position: absolute;
+    left: -110px;
+    top: -10px;
+    width: 100px;
+    height: 100px;
+    background: url(../images/logo.svg) no-repeat;
+    background-size: 100%;
+
+}
+
+h3.heading {
+    font-size: 2.8em;
+    color: #000000f0;
+    font-weight: 600;
+}
+
+.header-agile h1 a {
+    position: relative;
+}
+
+
+
+/*-- //header --*/
+
+/*-- banner --*/
+/* 底下文字居中对齐，调整和网页顶部的距离 */
+.banner-text {
+    padding-top: 20vw;
+    text-align: center;
+}
+
+
+/*-- text Slider --*/
+
+.home h3 {
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 1.15em;
+}
+
+/* //text slider */
+
+.bs-slider-overlay {
+    width: 100%;
+    height: 100%;
+    /* 给图片添加阴影蒙版 */
+    background: rgba(0, 0, 0, 0.5);
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+}
+
+/* 调整标题的文字样式 */
+h4.agile-title,
+h1.agile-title,
+h2.agile-title {
+    letter-spacing: 15px;
+    line-height: 1.2em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-size: 4em;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Yesteryear', cursive;
+}
+
+/* 对粉色背景中的文字进行样式调整 */
+h3.head_style {
+    letter-spacing: 12px;
+    line-height: 1.2em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-size: 2em;
+    font-weight: 800;
+    color: #fff;
+    background: #baa3cd;
+    width: 44%;
+    text-align: center;
+    padding: 5px;
+}
+
+/*-- //banner --*/
+/*-- banner --*/
+
+/* 设置标题的通栏大盒子的最小高度 */
+.csslider>ul>li,
+.bs-slider-overlay,
+.csslider>ul>li {
+    min-height: 750px;
+}
+
+/* 设置背景图片，标题后面的 */
+.csslider>ul>li:first-child {
+    background: url(../images/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.csslider {
+    position: relative;
+}
+
+.csslider>ul {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.csslider>ul>li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    font-size: 15px;
+    font-size: initial;
+    line-height: normal;
+    -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+    transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+    vertical-align: top;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+#slider1 {
+    width: 100%;
+}
+
+/* 设置在不同屏幕大小下各个盒子的最大宽度 */
+@media screen and (max-width: 768px) {
+    .csslider>ul>li {
+        min-height: 486px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .csslider>ul>li {
+        min-height: 420px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .csslider>ul>li {
+        min-height: 385px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .csslider>ul>li {
+        min-height: 330px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .csslider>ul>li {
+        min-height: 280px;
+    }
+}
+
+/* //banner */
+
+/* CSS Document */
+header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    margin: 16rem 0 0 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+}
+
+/* Styling the links */
+nav a {
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 16px;
+    position: relative;
+    padding: 0.2rem;
+}
+
+
+nav ul li ul li:hover {
+    background: #f8f9fa;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    color: #ddd;
+    background: transparent;
+}
+
+.menu li.active a {
+    color: #eee;
+    background: transparent;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 25px;
+    background: #fff;
+    padding: 10px;
+}
+
+ul.inner-dropdown a:hover {
+    color: #333;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 160px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+li>a:only-child:after {
+    content: '';
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 991px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .header-agile {
+        float: left;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle+a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        padding: 4px 18px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        float: right;
+        background-color: #00bbd1;
+        color: #fff;
+    }
+
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: 25%;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+        background: none;
+        color: #333;
+    }
+
+    .toggle:hover {
+        color: #333;
+        background-color: #fff;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked+ul {
+        display: block;
+        background: #fff;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+    nav a {
+        color: #333;
+    }
+
+    nav a:hover {
+        color: #333;
+    }
+
+    .menu li.active a {
+        color: #333;
+    }
+
+    nav ul ul li a {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    ul.inner-dropdown {
+        padding-bottom: 0 !important;
+        padding-top: 8px !important;
+    }
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+
+}
+
+/*-- // header --*/
+
+/*-- responsive design --*/
+
+@media(max-width:1440px) {
+
+    .csslider>ul>li,
+    .bs-slider-overlay,
+    .csslider>ul>li,
+    .bs-slider-overlay1 {
+        min-height: 700px;
+    }
+
+    header {
+        margin: 14rem 0 0 0;
+    }
+}
+
+@media(max-width:1366px) {
+    header {
+        margin: 12rem 0 0 0;
+    }
+}
+
+@media(max-width:1280px) {}
+
+@media(max-width:1080px) {
+    h3.head_style {
+        letter-spacing: 10px;
+    }
+
+    .banner-text {
+        padding-top: 23vw;
+    }
+
+    .csslider>ul>li,
+    .bs-slider-overlay,
+    .csslider>ul>li {
+        min-height: 550px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 10px;
+        font-size: 3.5em;
+    }
+
+    header {
+        margin: 10rem 0 0 0;
+    }
+}
+
+@media(max-width:991px) {
+
+    .counter {
+        padding: 25px;
+    }
+
+    .counter h3 {
+        letter-spacing: 0px;
+    }
+
+    img.group.list-group-image {
+        width: 100%;
+    }
+
+    span.decription {
+        width: 35%;
+    }
+
+    .adress-info h6 {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    form#contactform1 {
+        margin-top: 1em;
+        padding: 1em 0 0 0;
+    }
+
+    h3.head_style {
+        width: 60%;
+    }
+}
+
+@media(max-width:800px) {
+    h3.heading {
+        font-size: 2.8em;
+    }
+
+    header {
+        margin: 7rem 0 0 0;
+    }
+}
+
+@media(max-width:768px) {}
+
+@media(max-width:736px) {
+
+    .counter span.fa {
+        font-size: 2em;
+    }
+
+    .counter.two {
+        margin: 2em 0;
+    }
+
+    .price-main1 {
+        margin: 2em 0;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 21%;
+    }
+
+    h3.head_style {
+        width: 80%;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 5px;
+        font-size: 3em;
+    }
+}
+
+@media(max-width:684px) {
+    .banner-text {
+        padding-top: 25vw;
+    }
+}
+
+@media(max-width:667px) {
+
+    .testimonials_grid {
+        width: 100%;
+    }
+
+    header {
+        margin: 5rem 0 0 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .banner-text {
+        padding-top: 30vw;
+    }
+}
+
+
+@media(max-width:568px) {
+    h3.heading {
+        font-size: 2.5em;
+    }
+
+    .text_side {
+        text-align: center;
+    }
+
+    .adress-info h6 {
+        text-align: center;
+    }
+
+    .adress-info a,
+    .adress-info p {
+        text-align: center;
+    }
+
+    .text_side1 {
+        text-align: center !important;
+    }
+
+    .pricing-grid.card {
+        padding: 0px 0;
+    }
+
+    .adress-info1 {
+        margin: 2em 0;
+    }
+
+    h3.head_style {
+        font-size: 1.8em;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 5px;
+        font-size: 2.5em;
+    }
+
+    .about-lay-left h6 {
+        margin-top: 1em;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 22%;
+    }
+}
+
+@media(max-width:480px) {
+    .contact-page button.btn.btn-default {
+        width: 26%;
+    }
+
+    header {
+        margin: 4rem 0 0 0;
+    }
+
+    h3.head_style {
+        width: 90%;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 3px;
+    }
+
+    .csslider>ul>li,
+    .bs-slider-overlay,
+    .csslider>ul>li,
+    .bs-slider-overlay1 {
+        min-height: 412px;
+    }
+
+    p.copy-right-grids {
+        letter-spacing: 0px;
+    }
+
+    .about-para-txt p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:414px) {
+    p.p_sub {
+        width: 35%;
+    }
+
+    .counter {
+        padding: 20px;
+    }
+
+    h3.heading {
+        font-size: 2.3em;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 30%;
+    }
+
+    h3.head_style {
+        letter-spacing: 5px;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 1px;
+        font-size: 2.3em;
+    }
+}
+
+@media(max-width:384px) {
+    .contact-page button.btn.btn-default {
+        width: 33%;
+    }
+
+    h3.heading {
+        font-size: 2em;
+    }
+
+    .header-agile h1 {
+        font-size: 2em;
+    }
+
+    h3.head_style {
+        font-size: 1.5em;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 1px;
+        font-size: 2em;
+    }
+
+    .banner-text {
+        padding-top: 33vw;
+    }
+
+    .footer-top p {
+        padding-right: 0em;
+    }
+}
+
+@media(max-width:375px) {}
+
+@media(max-width:320px) {
+    p.p_sub {
+        width: 50%;
+    }
+
+    h3.head_style {
+        letter-spacing: 2px;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        font-size: 1.8em;
+    }
+
+    .banner-text {
+        padding-top: 39vw;
+    }
+
+    .counter h3 {
+        font-size: 1.5em;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 40%;
+    }
+}
+
+/*-- //responsive design --*/
