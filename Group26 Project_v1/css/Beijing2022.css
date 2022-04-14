@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.w3l-video-main {
+    margin-top: 100px;
+}
+
+.video-66-info {
+    position: relative;
+}
+
+.video-grids-info {
+    align-items: center;
+}
+
+.video-gd-right {
+    background: url(../images/Bejing2022/bg4.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    z-index: 9;
+    position: relative;
+    min-height: 32em;
+    display: grid;
+    align-items: center;
+    border-radius: 0px 30px 30px 0px;
+    -webkit-border-radius: 0px 30px 30px 0px;
+    -o-border-radius: 0px 30px 30px 0px;
+    -ms-border-radius: 0px 30px 30px 0px;
+}
+
+.button-4-pink {
+    width: 160px;
+    height: 50px;
+    border: 2px solid #f30067;
+    /* float: left; */
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 40px 0 0 0;
+    border-radius: 6px;
+}
+
+.button-4-pink a {
+    font-size: 16px;
+    color: #f30067;
+    text-decoration: none;
+    line-height: 45px;
+    transition: all .5s ease;
+    z-index: 2;
+    position: relative;
+    font-weight: 700;
+    display: inline;
+}
+
+.eff-4-pink {
+    width: 160px;
+    height: 50px;
+    left: -160px;
+    background: #f30067;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+}
+
+.button-4-pink:hover .eff-4-pink {
+    left: 0;
+}
+
+.button-4-pink:hover a {
+    color: #fff;
+}
+
+/* 播放视频的按钮图标 */
+.fa-play:before {
+    content: "";
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.video-gd-right::before {
+    content: "";
+    background: rgba(14, 16, 19, 0.72);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 0px 30px 30px 0px;
+    -webkit-border-radius: 0px 30px 30px 0px;
+    -o-border-radius: 0px 30px 30px 0px;
+    -ms-border-radius: 0px 30px 30px 0px;
+}
+
+span.video-play-icon {
+    background: #fff;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+}
+
+span.video-play-icon span {
+    color: #00d1cd;
+}
+
+span.video-play-icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+span.fa.fa-play {
+    line-height: 65px;
+}
+
+.play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 209, 205, 0.18), 0 0 0 10px rgba(0, 209, 205, 0.18), 0 0 0 20px rgba(0, 209, 205, 0.18);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(0, 209, 205, 0.18), 0 0 0 20px rgba(0, 209, 205, 0.18), 0 0 0 40px rgba(0, 209, 205, 0.18);
+    }
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 209, 205, 0.09), 0 0 0 10px rgba(0, 209, 205, 0.09), 0 0 0 20px rgba(0, 209, 205, 0.09);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(0, 209, 205, 0.09), 0 0 0 20px rgba(0, 209, 205, 0.09), 0 0 0 40px rgba(0, 209, 205, 0.09);
+    }
+}
+
+@media all and (max-width: 320px) {
+    #small-dialog {
+        padding: 15px;
+    }
+}
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h3.hny-title,
+h3.hny-title.two {
+    font-size: 40px;
+    line-height: 48px;
+    color: #252b33;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+#small-dialog,
+#small-dialog1 {
+    padding: 20px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+    text-align: center;
+}
+
+#small-dialog-it,
+#small-dialog-in,
+#small-dialog-fr,
+#small-dialog-sh,
+#small-dialog-sf,
+#small-dialog-su,
+#small-dialog-me,
+#small-dialog-ch,
+#small-dialog-pi,
+#small-dialog-am {
+    background: white;
+    padding: 20px;
+    text-align: left;
+    max-width: 450px;
+    margin: 40px auto;
+    position: relative;
+    text-align: center;
+}
+
+a.play-icon.popup-with-zoom-anim img:hover {
+    opacity: 0.5;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+/**
+       * Fade-zoom animation for first dialog
+       */
+/* start state */
+.my-mfp-zoom-in #small-dialog {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready #small-dialog {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing #small-dialog {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+    transition: opacity 0.3s ease-out;
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.mfp-hide {
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .col-lg-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    h3.hny-title,
+    h3.hny-title.two {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    body p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .title-content .title-info {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 667px) {
+
+    h3.hny-title,
+    h3.hny-title.two {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    a.read-more-btn.btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h3.hny-title,
+    h3.hny-title.two {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    h3.hny-title,
+    h3.hny-title.two {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}

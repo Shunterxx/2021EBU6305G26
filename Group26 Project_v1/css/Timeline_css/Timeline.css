@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  padding: 44px 0;
+  position: relative;
+}
+nav {
+  width: 872px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #1684fc;
+  margin: 0 auto;
+  display: flex;
+}
+nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+nav li.active {
+  background-color: #1684fc;
+  color: #fff;
+}
+.top .logo {
+  left: 46px;
+  top: 44px;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: #E8E8E8;
+}
+.time-line {
+  display: flex;
+  width: 1020px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 0 100px;
+}
+.time-line .column-title {
+  height: 74px;
+  color: #101010;
+  font-size: 30px;
+  text-align: center;
+}
+.time-line .item-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.time-line .item-box .time {
+  position: absolute;
+}
+.time-line .item-box .in {
+  overflow: hidden;
+  position: relative;
+}
+.time-line .item-box .in img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.time-line .item-box .in .text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+.time-line .item-box .in .text-box,
+.time-line .item-box .in .text-box:after {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.time-line .item-box .in .text-box::after {
+  content: '';
+  background-color: rgba(252, 135, 135, 0.6);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.time-line .item-box .in .text-box h5 {
+  font-size: 20px;
+  margin: 0 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 5;
+}
+.time-line .item-box .in .text-box p {
+  font-size: 16px;
+  margin: 10px 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 5;
+}
+.time-line .item-box .in:hover .text-box::after {
+  opacity: 1;
+}
+.time-line .item-box .in:hover .text-box h5,
+.time-line .item-box .in:hover .text-box p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.time-line .left-box {
+  border-right: 1px solid #BBBBBB;
+}
+.time-line .left-box .time {
+  right: 0;
+  transform: translate(50%);
+}
+.time-line .left-box .in {
+  width: 334px;
+  height: 200px;
+  margin-right: 102px;
+}
+.time-line .right-box .time {
+  transform: translate(-50%);
+}
+.time-line .right-box .in {
+  width: 450px;
+  height: 270px;
+  margin-left: 105px;
+}
