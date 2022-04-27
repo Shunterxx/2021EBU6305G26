@@ -1,0 +1,337 @@
+@font-face {
+  font-family: BRUSHSCRIPTSTD;
+  src: url("../../fonts/sports_fonts/BRUSHSCRIPTSTD.OTF");
+}
+
+a {
+  text-decoration:none;
+  font-size: 16px;
+}
+
+html {
+  font-size: 12px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.containerSports {
+  position: relative;
+  /* 容器的大小 2k: 1rem=20px; 1080p: 1rem=18.51px*/
+  width: 92rem;
+  height: 77rem;
+  margin: 12rem 0rem 14rem 17rem;
+  /* 园的颜色 */
+  background: 
+    radial-gradient(circle, RGB(148,207,251) 0%, RGB(148,207,251) 70%, transparent 70%, transparent 100%),
+    radial-gradient(circle, RGB(112,181,250) 0%, RGB(112,181,250) 70%, transparent 70%, transparent 100%),
+
+    radial-gradient(circle, RGB(202,233,248) 0%, RGB(202,233,248) 70%, transparent 70%, transparent 100%),
+    radial-gradient(circle, RGB(171,221,246) 0%, RGB(171,221,246) 70%, transparent 70%, transparent 100%);
+  background-repeat: no-repeat;
+  /* 圆的大小 */
+  background-size: 34rem 34rem, 19rem 19rem, 19rem 19rem, 23rem 23rem;
+  /* 圆的位置 */
+  background-position: 30rem 16rem, 21rem 11rem, 47rem 46rem, 61rem 21rem;
+}
+
+@media screen and (max-width: 45rem) {
+  .containerSports {
+    height: 50rem;
+    width: 30rem;
+    background-size: 20rem 20rem, 17rem 17rem, 10rem 10rem;
+    background-position: 2rem 3rem, 10rem 16rem, 10rem 32rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .containerSports {
+    width: 20rem;
+    height: 62rem;
+    background-size: 18rem 18rem, 17rem 17rem, 10rem 10rem;
+    background-position: 1.5rem 7rem, 0rem 25rem, 7rem 42rem;
+  }
+}
+
+.hexagon {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+
+  -webkit-filter: drop-shadow(-2px 7px 10px rgba(100, 100, 100, 0.5));
+  filter: drop-shadow(-2px 7px 10px rgba(100, 100, 100, 0.5));
+}
+
+.hexagon::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-120deg, #CEC0F1 0%, #CEC0F1 100%);
+
+  /* 六边形实现 */
+  /* -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
+
+  background: 
+    radial-gradient(circle, #CEC0F1 0%, #CEC0F1 70%, transparent 70%, transparent 100%);
+}
+
+.holder{
+  width: 100%;
+  height: 100%;
+
+  /* -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
+}
+
+.holder img{
+  -webkit-clip-path:circle(50%);
+  clip-path: circle(50%);
+}
+
+.sportsFont{
+  position: absolute;
+  left: 28rem;
+  top: 24rem;
+  font-size: 10rem;
+  font-family: BRUSHSCRIPTSTD;
+  color: RGB(43,60,107);
+}
+
+/* 六边形大小 */
+.hexagon.-A {
+  height: 12rem;
+  width: 12rem;
+}
+
+.hexagon.-B {
+  height: 11rem;
+  width: 11rem;
+}
+
+.hexagon.-C {
+  height: 11rem;
+  width: 11rem;
+}
+
+.hexagon.-D {
+  height: 28rem;
+  width: 28rem;
+}
+
+.hexagon.-E {
+  height: 16rem;
+  width: 16rem;
+}
+
+.hexagon.-F {
+  height: 27rem;
+  width: 27rem;
+}
+
+.hexagon.-G {
+  height: 24rem;
+  width: 24rem;
+}
+
+.hexagon.-H {
+  height: 14rem;
+  width: 14rem;
+}
+
+.hexagon.-I {
+  height: 11rem;
+  width: 11rem;
+}
+
+/* 位置 */
+.hexagon:nth-of-type(1) {
+  top: 10rem;
+  left: 36rem;
+}
+.hexagon:nth-of-type(2) {
+  top: 30rem;
+  left: 82rem;
+}
+.hexagon:nth-of-type(3) {
+  top: 6rem;
+  left: 55rem;
+}
+.hexagon:nth-of-type(4) {
+  top: 39em;
+  left: 26rem;
+}
+.hexagon:nth-of-type(5) {
+  top: 57rem;
+  left: 59rem;
+}
+.hexagon:nth-of-type(6) {
+  top: 23rem;
+  left: 0rem;
+}
+.hexagon:nth-of-type(7) {
+  top: 0rem;
+  left: 68rem;
+}
+.hexagon:nth-of-type(8) {
+  top: 3rem;
+  left: 14rem;
+}
+.hexagon:nth-of-type(9) {
+  top: 53rem;
+  left: 80rem;
+}
+
+
+/* 六边形字体大小 */
+.text-big {
+  font-size: 3.5rem;
+}
+
+.text-normal {
+  font-size: 2.5rem;
+}
+
+.text-small {
+  font-size: 1.5rem;
+}
+
+
+.holder img {
+  display: block;
+  width: auto;
+  height: 100%;
+
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.holder:hover img {
+  opacity: 0.8;
+  transition-duration: opacity 0.5s;
+}
+
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 50%;
+  text-align: center;
+  color: #FFFFFF;
+
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+
+.holder:hover .text {
+  opacity: 0.3;
+  transition-duration: opacity 0.5s;
+}
+
+
+
+
+
+@media screen and (max-width: 45rem) {
+  .hexagon:nth-of-type(1) {
+    top: 3rem;
+    left: 5rem;
+  }
+
+  .hexagon:nth-of-type(2) {
+    top: 17rem;
+    left: 14rem;
+  }
+
+  .hexagon:nth-of-type(3) {
+    top: 0;
+    left: 19rem;
+  }
+
+  .hexagon:nth-of-type(4) {
+    top: 27rem;
+    left: 6rem;
+  }
+
+  .hexagon:nth-of-type(5) {
+    top: 33rem;
+    left: 16rem;
+  }
+
+  .hexagon:nth-of-type(6) {
+    top: 14rem;
+    left: 1rem;
+  }
+
+  .hexagon:nth-of-type(7) {
+    top: 40rem;
+    left: 11rem;
+  }
+
+  .hexagon:nth-of-type(8) {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .hexagon:nth-of-type(9) {
+    top: 11rem;
+    left: 20rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .hexagon:nth-of-type(1) {
+    top: 4rem;
+    left: 4rem;
+  }
+
+  .hexagon:nth-of-type(2) {
+    top: 20rem;
+    left: 1rem;
+  }
+
+  .hexagon:nth-of-type(3) {
+    top: 35rem;
+    left: 7rem;
+  }
+
+  .hexagon:nth-of-type(4) {
+    top: 43rem;
+    left: 0rem;
+  }
+
+  .hexagon:nth-of-type(5) {
+    top: 48rem;
+    left: 9rem;
+  }
+
+  .hexagon:nth-of-type(6) {
+    top: 20rem;
+    left: 14rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .hexagon:nth-of-type(7) {
+    top: 54rem;
+    left: 3rem;
+  }
+
+  .hexagon:nth-of-type(8) {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .hexagon:nth-of-type(9) {
+    top: 36rem;
+    left: 4rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
