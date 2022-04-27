@@ -1,0 +1,195 @@
+.centred {
+    text-align: center;
+}
+
+.cta-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #237cf1;
+    padding: 95px 0px 100px 0px;
+}
+
+.anim-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+.cta-section .content-box h3 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'MPLUSRounded1c', sans-serif;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.cta-section .content-box h1 {
+    position: relative;
+    display: block;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'MPLUSRounded1c', sans-serif;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.cta-section .content-box .text {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #dfbdf9;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+
+.theme-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'MPLUSRounded1c', sans-serif;
+    padding: 17px 40px;
+    background-color: #ff7162;
+    line-height: 26px;
+    color: #ffffff !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.theme-btn:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: #253b70;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: scale(0.2, 1);
+    transform: scale(0.2, 1);
+}
+
+.theme-btn:hover:before {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.anim-icon .icon {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.parallax-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* 小图片logo */
+.parallax-icon .icon-1 {
+    left: 110px !important;
+    top: 160px !important;
+    background: url(../../images/index_images/sports/parallax-icon-1.png);
+    width: 131px;
+    height: 86px;
+    background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-2 {
+    left: 30% !important;
+    top: 80px !important;
+    background: url(../../images/index_images/sports/parallax-icon-2.png);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-3 {
+    left: 27% !important;
+    top: 70% !important;
+    background: url(../../images/index_images/sports/parallax-icon-3.png);
+    width: 59px;
+    height: 63px;
+    background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-4 {
+    left: 40% !important;
+    top: 40% !important;
+    background: url(../../images/index_images/sports/parallax-icon-4.png);
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-5 {
+    left: 75% !important;
+    top: 80px !important;
+    background: url(../../images/index_images/sports/parallax-icon-5.png);
+    width: 119px;
+    height: 54px;
+    background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-6 {
+    left: 65% !important;
+    top: 40% !important;
+    background: url(../../images/index_images/sports/parallax-icon-6.png);
+    width: 47px;
+    height: 65px;
+    background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-7 {
+    left: 72% !important;
+    top: 70% !important;
+    background: url(../../images/index_images/sports/parallax-icon-7.png);
+    width: 57px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.parallax-scene span {
+    transform: translate3d(30.6px, -21.9px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 0px;
+}
+
+
+/* 响应式布局 */
+@media only screen and (max-width: 1200px) {
+    .anim-icon {
+        display: none !important;
+    }
+}
