@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>time line</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/Timeline_css/Timeline.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style-starter-banner.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time line</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Timeline_css/Timeline.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style-starter-banner.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-
-
 <body>
-
-  <!-- 打开页面加载动画 -->
-  <!-- .preloader -->
-  <div class="preloader" id="loader"></div>
-  <!-- /.preloader -->
-
-
-  <section>
+    <!-- 打开页面加载动画 -->
+    <!-- .preloader -->
+    <div class="preloader" id="loader">
+    </div>
+    <!-- /.preloader -->
+    <section>
     <!-- banner slider -->
     <div class="w3l-banner-slider">
       <div class="wrapper-container">
@@ -42,9 +37,19 @@
       <!-- //banner slider -->
     </div>
   </section>
-
-  <section class="timeline">
+    <section class="timeline">
     <ul>
+     <li>
+         <div style=" opacity:0;">
+          <time>&nsbp;</time>
+          <div class="discovery">
+            
+          </div>
+          <div class="scientist">
+             
+          </div>
+        </div>
+      </li> 
       <li>
         <div>
           <time>1924(1st) </time>
@@ -217,11 +222,23 @@
           </div>
         </div>
       </li>
+
+
+      <li>
+        <div style=" opacity:0;">
+          <time>&nsbp;</time>
+          <div class="discovery">
+            
+          </div>
+          <div class="scientist">
+             
+          </div>
+        </div>
+      </li>
     </ul>
   </section>
-
-  <!-- Start footer -->
-  <footer>
+    <!-- Start footer -->
+    <footer>
     <div class="zerogrid">
       <div class="wrap-footer">
         <div class="row">
@@ -264,213 +281,204 @@
       </div>
     </div>
   </footer>
-  <!-- End footer -->
+    <!-- End footer -->
+    <script>
+        var items = document.querySelectorAll(".timeline li");
 
-  <script>
-    var items = document.querySelectorAll(".timeline li");
-
-    function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
-      return (
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
       );
-    }
-
-    function callbackFunc() {
-      for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
-          if (!items[i].classList.contains("in-view")) {
-            items[i].classList.add("in-view");
-          }
-        } else if (items[i].classList.contains("in-view")) {
-          items[i].classList.remove("in-view");
         }
-      }
-    }
 
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
-  </script>
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    if (!items[i].classList.contains("in-view")) {
+                        items[i].classList.add("in-view");
+                    }
+                } else if (items[i].classList.contains("in-view")) {
+                    items[i].classList.remove("in-view");
+                }
+            }
+        }
+
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    </script>
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span>
+            <img style="display: block; max-width: 100%; height: auto;" src="./images/arrow_up.png"></span>
+    </button>
+    <!-- /move top -->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- /move top -->
+    <!-- // for banner slider -->
+    <script src="js/athletes_js/momentum-slider.min.js"></script>
+    <script>
+        (function () {
+
+            var slidersContainer = document.querySelector('.sliders-container');
+
+            // Initializing the numbers slider
+            var msNumbers = new MomentumSlider({
+                el: slidersContainer,
+                cssClass: 'ms--numbers',
+                range: [1, 4],
+                rangeContent: function (i) {
+                    return '0' + i;
+                },
+                style: {
+                    transform: [{
+                        scale: [0.4, 1]
+                    }],
+                    opacity: [0, 1]
+                },
+
+                interactive: false
+            });
 
 
-  <!-- move top -->
-  <button onclick="topFunction()" id="movetop" title="Go to top">
-    <span><img style="display: block;max-width: 100%;height: auto;" src="./images/arrow_up.png"></span>
-  </button>
-  <!-- /move top -->
-
-  <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-      scrollFunction()
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("movetop").style.display = "block";
-      } else {
-        document.getElementById("movetop").style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <!-- /move top -->
-
-  <!-- // for banner slider -->
-  <script src="js/athletes_js/momentum-slider.min.js"></script>
-
-
-  <script>
-    (function () {
-
-      var slidersContainer = document.querySelector('.sliders-container');
-
-      // Initializing the numbers slider
-      var msNumbers = new MomentumSlider({
-        el: slidersContainer,
-        cssClass: 'ms--numbers',
-        range: [1, 4],
-        rangeContent: function (i) {
-          return '0' + i;
-        },
-        style: {
-          transform: [{
-            scale: [0.4, 1]
-          }],
-          opacity: [0, 1]
-        },
-
-        interactive: false
-      });
-
-
-      // Initializing the titles slider
-      var titles = [
+            // Initializing the titles slider
+            var titles = [
         'History',
         'Sports',
         'Athletes',
         'Today'
       ];
 
-      var hrefs = ['History.html', 'sports.html', 'athletes.html', 'index.html'];
+            var hrefs = ['History.html', 'sports.html', 'athletes.html', 'index.html'];
 
-      var msTitles = new MomentumSlider({
-        el: slidersContainer,
-        cssClass: 'ms--titles forH3',
-        range: [0, 3],
-        rangeContent: function (i) {
-          return '<h3>' + titles[i] + '</h3>';
-        },
-        vertical: true,
-        reverse: true,
-        style: {
-          opacity: [0, 1]
-        },
+            var msTitles = new MomentumSlider({
+                el: slidersContainer,
+                cssClass: 'ms--titles forH3',
+                range: [0, 3],
+                rangeContent: function (i) {
+                    return '<h3>' + titles[i] + '</h3>';
+                },
+                vertical: true,
+                reverse: true,
+                style: {
+                    opacity: [0, 1]
+                },
 
-        interactive: false
-      });
-
-
-      // Initializing the links slider
-      var msLinks = new MomentumSlider({
-        el: slidersContainer,
-        cssClass: 'ms--links',
-        range: [0, 3],
-        rangeContent: function (i) {
-          return '<a href="' + hrefs[i] + ' " class="ms-slide__link btn">View More</a>';
-        },
-        vertical: true,
-        interactive: false
-      });
+                interactive: false
+            });
 
 
-      // Get pagination items
-      var pagination = document.querySelector('.pagination');
-      var paginationItems = [].slice.call(pagination.children);
-
-      // Initializing the images slider
-      var msImages = new MomentumSlider({
-        // Element to append the slider
-        el: slidersContainer,
-        // CSS class to reference the slider
-        cssClass: 'ms--images',
-        // Generate the 4 slides required
-        range: [0, 3],
-        rangeContent: function () {
-          return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>';
-        },
-        // Syncronize the other sliders
-        sync: [msNumbers, msTitles, msLinks],
-        // Styles to interpolate as we move the slider
-        style: {
-          '.ms-slide__image': {
-            transform: [{
-              scale: [1.5, 1]
-            }]
-          }
-        },
+            // Initializing the links slider
+            var msLinks = new MomentumSlider({
+                el: slidersContainer,
+                cssClass: 'ms--links',
+                range: [0, 3],
+                rangeContent: function (i) {
+                    return '<a href="' + hrefs[i] + ' " class="ms-slide__link btn">View More</a>';
+                },
+                vertical: true,
+                interactive: false
+            });
 
 
-        // Update pagination if slider change
-        change: function (newIndex, oldIndex) {
-          if (typeof oldIndex !== 'undefined') {
-            paginationItems[oldIndex].classList.remove('pagination__item--active');
-          }
-          paginationItems[newIndex].classList.add('pagination__item--active');
+            // Get pagination items
+            var pagination = document.querySelector('.pagination');
+            var paginationItems = [].slice.call(pagination.children);
+
+            // Initializing the images slider
+            var msImages = new MomentumSlider({
+                // Element to append the slider
+                el: slidersContainer,
+                // CSS class to reference the slider
+                cssClass: 'ms--images',
+                // Generate the 4 slides required
+                range: [0, 3],
+                rangeContent: function () {
+                    return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>';
+                },
+                // Syncronize the other sliders
+                sync: [msNumbers, msTitles, msLinks],
+                // Styles to interpolate as we move the slider
+                style: {
+                    '.ms-slide__image': {
+                        transform: [{
+                            scale: [1.5, 1]
+                        }]
+                    }
+                },
+
+
+                // Update pagination if slider change
+                change: function (newIndex, oldIndex) {
+                    if (typeof oldIndex !== 'undefined') {
+                        paginationItems[oldIndex].classList.remove('pagination__item--active');
+                    }
+                    paginationItems[newIndex].classList.add('pagination__item--active');
+                }
+            });
+
+
+            // Select corresponding slider item when a pagination button is clicked
+            pagination.addEventListener('click', function (e) {
+                if (e.target.matches('.pagination__button')) {
+                    var index = paginationItems.indexOf(e.target.parentNode);
+                    msImages.select(index);
+                }
+            });
+
+        })();
+    </script>
+    <!-- // for banner slider -->
+    <!-- 打开页面出现动画的js -->
+    <script>
+        var pre = document.getElementById('loader');
+        setTimeout(function () {
+            loader1();
+        }, 300);
+        setTimeout(function () {
+            loader2();
+        }, 400);
+        setTimeout(function () {
+            loader3();
+        }, 500);
+        setTimeout(function () {
+            loader4();
+        }, 550);
+        function loader1() {
+            pre.style.opacity = 0.5;
         }
-      });
-
-
-      // Select corresponding slider item when a pagination button is clicked
-      pagination.addEventListener('click', function (e) {
-        if (e.target.matches('.pagination__button')) {
-          var index = paginationItems.indexOf(e.target.parentNode);
-          msImages.select(index);
+        function loader2() {
+            pre.style.opacity = 0.3;
         }
-      });
+        function loader3() {
+            pre.style.opacity = 0.1;
+        }
+        function loader4() {
+            pre.style.display = 'none';
+        }
 
-    })();
-  </script>
-  <!-- // for banner slider -->
-
-
-  <!-- 打开页面出现动画的js -->
-  <script>
-    var pre = document.getElementById('loader');
-    setTimeout(function () {
-      loader1();
-    }, 300);
-    setTimeout(function () {
-      loader2();
-    }, 400);
-    setTimeout(function () {
-      loader3();
-    }, 500);
-    setTimeout(function () {
-      loader4();
-    }, 550);
-    function loader1() {
-      pre.style.opacity = 0.5;
-    }
-    function loader2() {
-      pre.style.opacity = 0.3;
-    }
-    function loader3() {
-      pre.style.opacity = 0.1;
-    }
-    function loader4() {
-      pre.style.display = 'none';
-    }
-
-  </script>
+    </script>
 </body>
-
 </html>
