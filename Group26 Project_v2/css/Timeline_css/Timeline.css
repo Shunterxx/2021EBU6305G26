@@ -17,7 +17,7 @@ body {
   color: #3c3f64;
   overflow-x: hidden;
 }
-
+.timeline{ margin-top:50px; margin-bottom:50px; }
 .timeline ul li {
   list-style-type: none;
   position: relative;
