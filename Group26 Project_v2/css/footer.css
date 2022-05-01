@@ -432,6 +432,23 @@ footer .col-footer-3 input[type="text"] {
     margin-left: 83.33%;
 }
 
+
+.timeline ul li:nth-of-type(odd)>div {
+    left: -521px;
+}
+
+
+.timeline ul li:nth-of-type(even)>div {
+    left: 80px;
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
     .zerogrid {
         width: 960px;
