@@ -1,0 +1,678 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("../../fonts/index_fonts/fontawesome-webfont.eot?v=4.7.0");
+    src: url("../../fonts/index_fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../../fonts/index_fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../../fonts/index_fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../../fonts/index_fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../../fonts/index_fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-- header --*/
+/* 头部的标题文字样式 */
+
+p {
+    color: grey;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+a.navbar-brand {
+    font-size: .75em;
+    color: #fff;
+    padding: 0;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    position: relative;
+}
+
+/* 奥运会logo添加伪元素  */
+a.navbar-brand {
+    font-size: .75em;
+    color: #fff;
+    padding: 0;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    position: relative;
+}
+
+.header-agile h1 a span::before {
+    content: '';
+    position: absolute;
+    left: -110px;
+    top: -10px;
+    width: 100px;
+    height: 100px;
+    background: url(../../images/logo.svg) no-repeat;
+    background-size: 100%;
+
+}
+
+h3.heading {
+    font-size: 2.8em;
+    color: #000000f0;
+    font-weight: 600;
+}
+
+.header-agile h1 a {
+    position: relative;
+}
+
+.header-agile h1 a:hover {
+    transition: 0.5s all;
+    color: #e4e7ec;
+}
+
+
+
+/*-- //header --*/
+
+/*-- banner --*/
+/* 底下文字居中对齐，调整和网页顶部的距离 */
+.banner-text {
+    padding-top: 20vw;
+    text-align: center;
+}
+
+
+/*-- text Slider --*/
+
+.home h3 {
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 1.15em;
+}
+
+/* //text slider */
+
+.bs-slider-overlay {
+    width: 100%;
+    height: 100%;
+    /* 给图片添加阴影蒙版 */
+    background: rgba(0, 0, 0, 0.5);
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+}
+
+/* 调整标题的文字样式 */
+h4.agile-title,
+h1.agile-title,
+h2.agile-title {
+
+    letter-spacing: 15px;
+    line-height: 1.2em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-size: 4em;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Yesteryear', cursive;
+}
+
+/* 对粉色背景中的文字进行样式调整 */
+
+/*-- //banner --*/
+/*-- banner --*/
+
+/* 设置标题的通栏大盒子的最小高度 */
+.csslider>ul>li,
+.bs-slider-overlay,
+.csslider>ul>li {
+    min-height: 750px;
+}
+
+/* 设置背景图片，标题后面的 */
+.csslider>ul>li:first-child {
+    background: url(../../images/index_images/index_athletes/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.csslider {
+    position: relative;
+}
+
+.csslider>ul {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.csslider>ul>li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    font-size: 15px;
+    font-size: initial;
+    line-height: normal;
+    -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+    transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+    vertical-align: top;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+/* 设置在不同屏幕大小下各个盒子的最大宽度 */
+@media screen and (max-width: 768px) {
+    .csslider>ul>li {
+        min-height: 486px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .csslider>ul>li {
+        min-height: 420px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .csslider>ul>li {
+        min-height: 385px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .csslider>ul>li {
+        min-height: 330px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .csslider>ul>li {
+        min-height: 280px;
+    }
+}
+
+/* //banner */
+
+/* CSS Document */
+header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    margin: 16rem 0 0 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 去掉Home的点 */
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+
+/* 字体居中对齐 */
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* 设置为行内块元素，让其在一行 */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+}
+
+/* Styling the links */
+nav a {
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 16px;
+    position: relative;
+    padding: 0.2rem;
+}
+
+/* 导航栏鼠标经过变色 */
+nav a:hover {
+    color: #83a7e6;
+    transition: 0.5s all;
+    background: transparent;
+}
+
+/* 设置字体颜色 */
+.menu li.active a {
+    color: #ffffff;
+    background: transparent;
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 991px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .header-agile {
+        float: left;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle+a,
+    .menu {
+        display: none;
+    }
+
+    /* 页面变小后，右边的导航标签 */
+    .toggle {
+        display: block;
+        padding: 4px 18px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        float: right;
+        background-color: #00bbd1;
+        color: #fff;
+    }
+
+    .toggle:hover {
+        color: #333;
+        background-color: #fff;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable ,点开之后的背景颜色*/
+    [id^=drop]:checked+ul {
+        display: block;
+        background: #fff;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    /* 右边导航栏点击后，文字的设置 */
+    nav a {
+        color: #333;
+    }
+
+    nav a:hover {
+        color: rgb(230, 52, 52);
+    }
+
+    /* 导航栏的home */
+    .menu li.active a {
+        color: #333;
+    }
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+
+}
+
+/*-- // header --*/
+
+/*-- responsive design --*/
+
+@media(max-width:1440px) {
+
+    .csslider>ul>li,
+    .bs-slider-overlay,
+    .csslider>ul>li,
+    .bs-slider-overlay1 {
+        min-height: 700px;
+    }
+
+    header {
+        margin: 14rem 0 0 0;
+    }
+}
+
+@media(max-width:1366px) {
+    header {
+        margin: 12rem 0 0 0;
+    }
+}
+
+@media(max-width:1080px) {
+    h3.head_style {
+        letter-spacing: 10px;
+    }
+
+    .banner-text {
+        padding-top: 23vw;
+    }
+
+    .csslider>ul>li,
+    .bs-slider-overlay,
+    .csslider>ul>li {
+        min-height: 550px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 10px;
+        font-size: 3.5em;
+    }
+
+    header {
+        margin: 10rem 0 0 0;
+    }
+}
+
+@media(max-width:991px) {
+
+    .counter {
+        padding: 25px;
+    }
+
+    .counter h3 {
+        letter-spacing: 0px;
+    }
+
+    img.group.list-group-image {
+        width: 100%;
+    }
+
+    span.decription {
+        width: 35%;
+    }
+
+    .adress-info h6 {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    form#contactform1 {
+        margin-top: 1em;
+        padding: 1em 0 0 0;
+    }
+
+    h3.head_style {
+        width: 60%;
+    }
+}
+
+@media(max-width:800px) {
+    h3.heading {
+        font-size: 2.8em;
+    }
+
+    header {
+        margin: 7rem 0 0 0;
+    }
+}
+
+@media(max-width:736px) {
+
+    .counter span.fa {
+        font-size: 2em;
+    }
+
+    .counter.two {
+        margin: 2em 0;
+    }
+
+    .price-main1 {
+        margin: 2em 0;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 21%;
+    }
+
+    h3.head_style {
+        width: 80%;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 5px;
+        font-size: 3em;
+    }
+}
+
+@media(max-width:684px) {
+    .banner-text {
+        padding-top: 25vw;
+    }
+}
+
+@media(max-width:667px) {
+
+    .testimonials_grid {
+        width: 100%;
+    }
+
+    header {
+        margin: 5rem 0 0 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .banner-text {
+        padding-top: 30vw;
+    }
+}
+
+
+@media(max-width:568px) {
+    h3.heading {
+        font-size: 2.5em;
+    }
+
+    .text_side {
+        text-align: center;
+    }
+
+    .adress-info h6 {
+        text-align: center;
+    }
+
+    .adress-info a,
+    .adress-info p {
+        text-align: center;
+    }
+
+    .text_side1 {
+        text-align: center !important;
+    }
+
+    .pricing-grid.card {
+        padding: 0px 0;
+    }
+
+    .adress-info1 {
+        margin: 2em 0;
+    }
+
+    h3.head_style {
+        font-size: 1.8em;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 5px;
+        font-size: 2.5em;
+    }
+
+    .about-lay-left h6 {
+        margin-top: 1em;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 22%;
+    }
+}
+
+@media(max-width:480px) {
+    .contact-page button.btn.btn-default {
+        width: 26%;
+    }
+
+    header {
+        margin: 4rem 0 0 0;
+    }
+
+    h3.head_style {
+        width: 90%;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 3px;
+    }
+
+    .csslider>ul>li,
+    .bs-slider-overlay,
+    .csslider>ul>li,
+    .bs-slider-overlay1 {
+        min-height: 412px;
+    }
+
+    p.copy-right-grids {
+        letter-spacing: 0px;
+    }
+
+    .about-para-txt p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:414px) {
+    p.p_sub {
+        width: 35%;
+    }
+
+    .counter {
+        padding: 20px;
+    }
+
+    h3.heading {
+        font-size: 2.3em;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 30%;
+    }
+
+    h3.head_style {
+        letter-spacing: 5px;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 1px;
+        font-size: 2.3em;
+    }
+}
+
+@media(max-width:384px) {
+    .contact-page button.btn.btn-default {
+        width: 33%;
+    }
+
+    h3.heading {
+        font-size: 2em;
+    }
+
+    .header-agile h1 {
+        font-size: 2em;
+    }
+
+    h3.head_style {
+        font-size: 1.5em;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        letter-spacing: 1px;
+        font-size: 2em;
+    }
+
+    .banner-text {
+        padding-top: 33vw;
+    }
+
+    .footer-top p {
+        padding-right: 0em;
+    }
+}
+
+@media(max-width:320px) {
+    p.p_sub {
+        width: 50%;
+    }
+
+    h3.head_style {
+        letter-spacing: 2px;
+    }
+
+    h4.agile-title,
+    h1.agile-title,
+    h2.agile-title {
+        font-size: 1.8em;
+    }
+
+    .banner-text {
+        padding-top: 39vw;
+    }
+
+    .counter h3 {
+        font-size: 1.5em;
+    }
+
+    .contact-page button.btn.btn-default {
+        width: 40%;
+    }
+}
+
+/*-- //responsive design --*/

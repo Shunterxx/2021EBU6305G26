@@ -1,0 +1,15 @@
+/* Bejing2022 css */
+@import url(Beijing2022.css);
+/* fontawesome css */
+@import url(font-awesome.min.css);
+/* header css */
+@import url(headerSytel.css);
+/* history part css */
+@import url(HistoryStyle.css);
+/* athletes part css */
+@import url(AthletesStyle.css);
+@import url(mislider.css);
+@import url(mislider-custom.css);
+/* sports part css */
+@import url(SportsStyle.css);
+@import url(zerogrid.css);
